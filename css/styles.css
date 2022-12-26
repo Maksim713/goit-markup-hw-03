@@ -1,0 +1,285 @@
+:root {
+  --dark-blue: #2e2f42;
+  --dark-gray: #434455;
+  --primary: #4d5ae5;
+  --primary-dark: #404bbf;
+  --white: #ffffff;
+  --light: #f4f4fd;
+  --light-gray: #e7e9fc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-blue);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ------------------STUDIO----------------- */
+
+/* -------------HEADER------------- */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  background: var(--white);
+}
+.header-logo {
+}
+.header-logo,
+.footer-logos {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.logo {
+  color: var(--dark-blue);
+}
+.header-link:hover,
+.header-link:focus,
+.header-mailto:hover,
+.header-mailto:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--primary);
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-blue);
+}
+
+.current {
+  color: var(--primary);
+}
+
+.header-mailto,
+.header-tel {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-gray);
+}
+.header-tel {
+}
+
+/* -------------SECTION DARK------------- */
+
+.dark {
+  background: var(--dark-blue);
+}
+.dark-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.dark-btn {
+  background: var(--primary);
+  border: 0px;
+  border-radius: 4px;
+}
+
+.dark-btn:hover,
+.dark-btn:focus {
+  background: var(--primary-dark);
+}
+
+.dark-btn-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* -------------SECTION LIGHT------------- */
+
+.light {
+}
+
+.light-list {
+}
+
+.light-item {
+}
+
+.light-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.light-after-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-gray);
+}
+
+/* -------------SECTION WORK------------- */
+
+.work {
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.work-list {
+}
+
+.work-item {
+}
+
+/* -------------SECTION TEAM------------- */
+
+.team {
+  background: var(--light);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.team-list {
+}
+
+.team-item {
+  background: var(--white);
+  width: 264px;
+  height: 380px;
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team-profession {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark-gray);
+}
+
+/* -------------FOOTER------------- */
+
+.footer {
+  background: var(--dark-blue);
+}
+
+.logos {
+  color: var(--light);
+}
+
+.footer-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-gray);
+}
+
+/* -----------------PORTFOLIO----------------- */
+
+/* -------------SECTION FILTER------------- */
+
+.filter {
+}
+
+.filter-list {
+}
+
+.filter-item {
+}
+
+.filter-item-img {
+  background: var(--white);
+}
+
+.filter-btn {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  background-color: var(--light);
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.filter-after-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-gray);
+}
