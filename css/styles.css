@@ -26,6 +26,17 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 h2 h3 p {
+  margin: 0;
+}
+
 /* ------------------STUDIO----------------- */
 
 /* -------------HEADER------------- */
@@ -40,9 +51,25 @@ body {
 
 .header {
   background: var(--white);
+  display: block;
+  padding: 24px 0;
 }
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-navigation {
+  margin-left: 77px;
+  margin-right: auto;
+  align-items: center;
+}
+
 .header-logo {
 }
+
 .header-logo,
 .footer-logos {
   font-family: "Raleway";
@@ -55,9 +82,11 @@ body {
   text-transform: uppercase;
   color: var(--primary);
 }
+
 .logo {
   color: var(--dark-blue);
 }
+
 .header-link:hover,
 .header-link:focus,
 .header-mailto:hover,
@@ -66,10 +95,17 @@ body {
 .header-tel:focus {
   color: var(--primary);
 }
+
 .header-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
+
 .header-item {
+  position: relative;
 }
+
 .header-link {
   font-weight: 700;
   font-size: 16px;
@@ -90,6 +126,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-gray);
 }
+
+.header-mailto {
+}
+
 .header-tel {
 }
 
@@ -97,19 +137,27 @@ body {
 
 .dark {
   background: var(--dark-blue);
+  padding: 192px 0;
+  text-align: center;
 }
+
 .dark-title {
+  width: 492px;
+  margin: 0 auto 48px auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: var(--white);
 }
+
 .dark-btn {
+  padding: 16px 32px;
   background: var(--primary);
   border: 0px;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .dark-btn:hover,
@@ -135,12 +183,17 @@ body {
 }
 
 .light-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .light-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .light-title {
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -160,15 +213,20 @@ body {
 }
 
 .work-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .work-item {
