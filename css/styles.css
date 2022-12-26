@@ -37,6 +37,12 @@ h1 h2 h3 p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ------------------STUDIO----------------- */
 
 /* -------------HEADER------------- */
@@ -210,6 +216,7 @@ h1 h2 h3 p {
 /* -------------SECTION WORK------------- */
 
 .work {
+  padding-top: 0;
 }
 
 .work-title {
@@ -230,6 +237,7 @@ h1 h2 h3 p {
 }
 
 .work-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* -------------SECTION TEAM------------- */
@@ -239,6 +247,7 @@ h1 h2 h3 p {
 }
 
 .team-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -248,23 +257,37 @@ h1 h2 h3 p {
 }
 
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .team-item {
   background: var(--white);
   width: 264px;
   height: 380px;
+  flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.team-name {
+.team-card {
+  text-align: center;
+  padding: 32px 0;
+  background-color: var(--white);
+}
+
+.team-card-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
-.team-profession {
+.team-card-profession {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -275,7 +298,12 @@ h1 h2 h3 p {
 /* -------------FOOTER------------- */
 
 .footer {
+  padding: 100px 0;
   background: var(--dark-blue);
+}
+
+.footer-logos {
+  margin-bottom: 16px;
 }
 
 .logos {
@@ -287,6 +315,7 @@ h1 h2 h3 p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-gray);
+  max-width: 264px;
 }
 
 /* -----------------PORTFOLIO----------------- */
