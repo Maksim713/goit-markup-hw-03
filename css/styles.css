@@ -27,14 +27,22 @@ body {
   overflow: hidden;
 }
 
-.container {
-  max-width: 1128px;
-  padding: 0 15px;
-  margin: 0 auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
 }
 
-h1 h2 h3 p {
-  margin: 0;
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+
+  list-style: none;
 }
 
 img {
@@ -43,34 +51,39 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  font-style: normal;
+  transition: all 500ms ease;
+}
+
+.container {
+  max-width: 1158px;
+
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* ------------------STUDIO----------------- */
 
 /* -------------HEADER------------- */
-
-.list {
-  list-style: none;
-}
 
 .link {
   text-decoration: none;
 }
 
 .header {
-  background: var(--white);
-  display: block;
   padding: 24px 0;
 }
 
 .header-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .header-navigation {
   margin-left: 77px;
   margin-right: auto;
-  align-items: center;
 }
 
 .header-logo,
@@ -133,13 +146,13 @@ img {
 /* -------------SECTION DARK------------- */
 
 .dark {
-  background: var(--dark-blue);
+  background-color: var(--dark-blue);
   padding: 192px 0;
   text-align: center;
 }
 
 .dark-title {
-  width: 492px;
+  width: 496px;
   margin: 0 auto 48px auto;
   font-weight: 700;
   font-size: 56px;
@@ -151,7 +164,7 @@ img {
 
 .dark-btn {
   padding: 16px 32px;
-  background: var(--primary);
+  background-color: var(--primary);
   border: 0px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -159,7 +172,7 @@ img {
 
 .dark-btn:hover,
 .dark-btn:focus {
-  background: var(--primary-dark);
+  background-color: var(--primary-dark);
 }
 
 .dark-btn-title {
@@ -175,6 +188,10 @@ img {
 }
 
 /* -------------SECTION LIGHT------------- */
+
+.light {
+  padding: 120px 0;
+}
 
 .light-list {
   display: flex;
@@ -205,6 +222,7 @@ img {
 
 .work {
   padding-top: 0;
+  padding-bottom: 120px;
 }
 
 .work-title {
@@ -225,14 +243,13 @@ img {
 }
 
 .work-item {
-  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* -------------SECTION TEAM------------- */
 
 .team {
   padding: 120px 0;
-  background: var(--light);
+  background-color: var(--light);
 }
 
 .team-title {
@@ -249,14 +266,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 120px;
 }
 
 .team-item {
-  background: var(--white);
+  background-color: var(--white);
   width: 264px;
-  height: 380px;
-  flex-basis: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -265,7 +279,6 @@ img {
 .team-card {
   text-align: center;
   padding: 32px 0;
-  background-color: var(--white);
 }
 
 .team-card-name {
@@ -315,7 +328,7 @@ img {
 }
 
 .filter-item-img {
-  background: var(--white);
+  background-color: var(--white);
   width: calc((100% - 48px) / 3);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -340,7 +353,7 @@ img {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  background: var(--primary);
+  background-color: var(--primary);
   color: var(--white);
 }
 
@@ -364,7 +377,7 @@ img {
 
 .footer {
   padding: 100px 0;
-  background: var(--dark-blue);
+  background-color: var(--dark-blue);
 }
 
 .footer-logos {
@@ -380,5 +393,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-gray);
-  max-width: 264px;
+  width: 264px;
 }
