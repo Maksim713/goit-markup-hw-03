@@ -58,7 +58,7 @@ a {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 1128px;
 
   padding: 0 15px;
   margin: 0 auto;
@@ -74,6 +74,7 @@ a {
 
 .header {
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -300,8 +301,8 @@ a {
 /* -------------SECTION FILTER------------- */
 
 .filter {
-  margin-top: 96px;
-  margin-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .filter-list-btn {
@@ -322,13 +323,11 @@ a {
 .filter-list-content {
   padding: 32px 16px;
   border: 0.5px solid var(--light);
+  border-top: 0;
 }
 
 .filter-item-img {
-  background-color: var(--white);
-  width: calc((100% - 48px) / 3);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .filter-btn {
